@@ -8,23 +8,11 @@
       "version": "0.1.0",
       "category": "development",
       "source": "./plugins/example-plugin",
-      "displayName": "示例插件",
-      "displayName_i18n": {
-        "en": "Example Plugin",
-        "zh-CN": "示例插件"
-      },
-      "description_i18n": {
-        "en": "Minimal example plugin: shows the manifest and skill layout, usable as a template for new plugins.",
-        "zh-CN": "最小示例插件：演示清单与 skill 的目录形状，可作为新插件模板"
-      }
+      "displayName": "示例插件"
     },
     {
       "name": "cloudbase-skills",
       "description": "腾讯云 CloudBase 开发技能与 MCP 集成，覆盖 Web、微信小程序、数据库、云函数、云托管、云存储和 AI 项目的开发、部署与排障。",
-      "description_i18n": {
-        "en": "CloudBase development skills and MCP integration for building, deploying, and troubleshooting Web, WeChat Mini Program, database, cloud function, CloudRun, storage, and AI projects.",
-        "zh-CN": "腾讯云 CloudBase 开发技能与 MCP 集成，覆盖 Web、微信小程序、数据库、云函数、云托管、云存储和 AI 项目的开发、部署与排障。"
-      },
       "version": "0.1.0",
       "author": {
         "name": "TencentCloudBase"
@@ -43,10 +31,6 @@
     {
       "name": "github",
       "description": "基于 GitHub CLI 的 GitHub 工作流，覆盖提交、Pull Request、Issue、Release、Actions、仓库、Codespaces 等资源。",
-      "description_i18n": {
-        "en": "GitHub CLI workflows for commits, pull requests, issues, releases, Actions, repositories, Codespaces, and other GitHub resources.",
-        "zh-CN": "基于 GitHub CLI 的 GitHub 工作流，覆盖提交、Pull Request、Issue、Release、Actions、仓库、Codespaces 等资源。"
-      },
       "version": "0.1.2",
       "author": {
         "name": "ucode"
@@ -67,10 +51,6 @@
     {
       "name": "gitlab",
       "description": "基于官方 GitLab CLI 的 Merge Request、Issue、CI/CD、仓库、Release 与 API 工作流。",
-      "description_i18n": {
-        "en": "GitLab CLI workflows based on GitLab's official Agent Skills for merge requests, issues, CI/CD, repositories, releases, and API operations.",
-        "zh-CN": "基于官方 GitLab CLI 的 Merge Request、Issue、CI/CD、仓库、Release 与 API 工作流。"
-      },
       "version": "0.1.3",
       "author": {
         "name": "ucode"
@@ -89,10 +69,6 @@
     {
       "name": "alibaba-cloud-cli",
       "description": "阿里云 CLI 工作流：配置凭证与 profile，并安全执行云资源查询和操作。",
-      "description_i18n": {
-        "en": "Alibaba Cloud CLI workflows for credential setup, profile checks, and safe cloud resource operations.",
-        "zh-CN": "阿里云 CLI 工作流：配置凭证与 profile，并安全执行云资源查询和操作。"
-      },
       "version": "0.1.2",
       "author": {
         "name": "ucode"
@@ -112,10 +88,6 @@
     {
       "name": "lark-cli",
       "description": "Lark CLI 工作流：覆盖文档、表格、多维表格、日历、消息等 SaaS 资源，并引导应用配置与 OAuth 登录。",
-      "description_i18n": {
-        "en": "Lark CLI workflows for docs, sheets, Base, calendar, messaging, and other SaaS resources with guided setup and OAuth login.",
-        "zh-CN": "Lark CLI 工作流：覆盖文档、表格、多维表格、日历、消息等 SaaS 资源，并引导应用配置与 OAuth 登录。"
-      },
       "version": "0.1.2",
       "author": {
         "name": "ucode"
@@ -136,10 +108,6 @@
     {
       "name": "tencent-meeting-cli",
       "description": "腾讯会议 CLI 工作流：OAuth2 授权、会议管理、录制管理和参会报告查询。",
-      "description_i18n": {
-        "en": "Tencent Meeting CLI workflows with OAuth2 setup, meeting management, recordings, and attendee reports.",
-        "zh-CN": "腾讯会议 CLI 工作流：OAuth2 授权、会议管理、录制管理和参会报告查询。"
-      },
       "version": "0.1.3",
       "author": {
         "name": "ucode"
@@ -157,10 +125,6 @@
     {
       "name": "dingtalk-cli",
       "description": "钉钉 Workspace CLI 工作流：OAuth/设备授权、验证组织账号，并按需安装上游 Skills。",
-      "description_i18n": {
-        "en": "DingTalk Workspace CLI workflows with OAuth/device authorization, profile checks, and optional upstream Skills.",
-        "zh-CN": "钉钉 Workspace CLI 工作流：OAuth/设备授权、验证组织账号，并按需安装上游 Skills。"
-      },
       "version": "0.1.1",
       "author": {
         "name": "ucode"
@@ -183,10 +147,6 @@
     {
       "name": "wecom-cli",
       "description": "企业微信 CLI 工作流：覆盖消息、文档、表格、邮件、日历、会议、通讯录和待办，并支持扫码授权与状态检查。",
-      "description_i18n": {
-        "en": "WeCom CLI workflows for messages, docs, sheets, mail, calendar, meetings, contacts, and todos with QR authentication.",
-        "zh-CN": "企业微信 CLI 工作流：覆盖消息、文档、表格、邮件、日历、会议、通讯录和待办，并支持扫码授权与状态检查。"
-      },
       "version": "0.1.1",
       "author": {
         "name": "ucode"
@@ -210,10 +170,6 @@
     {
       "name": "obsidian",
       "description": "来自 kepano/obsidian-skills 的 Obsidian 创作技能：Obsidian 风格 Markdown 笔记、Bases 数据库视图、JSON Canvas 白板、Obsidian CLI 库操作、Defuddle 网页正文提取、Knap 模板批量生成笔记；并集成 axtonliu/axton-obsidian-visual-skills 的可视化技能：Mermaid/Excalidraw 图表生成与文本转画布布局。附 setup 技能，检测并安装 Obsidian CLI、defuddle 与 knap。",
-      "description_i18n": {
-        "en": "Obsidian authoring skills from kepano/obsidian-skills: Obsidian Flavored Markdown notes, Bases database views, JSON Canvas boards, vault automation via Obsidian CLI, clean web extraction with Defuddle, and Knap template rendering — plus visualization skills from axtonliu/axton-obsidian-visual-skills: Mermaid and Excalidraw diagram generation and text-to-canvas layout. A setup skill verifies and installs the Obsidian CLI, defuddle, and knap.",
-        "zh-CN": "来自 kepano/obsidian-skills 的 Obsidian 创作技能：Obsidian 风格 Markdown 笔记、Bases 数据库视图、JSON Canvas 白板、Obsidian CLI 库操作、Defuddle 网页正文提取、Knap 模板批量生成笔记；并集成 axtonliu/axton-obsidian-visual-skills 的可视化技能：Mermaid/Excalidraw 图表生成与文本转画布布局。附 setup 技能，检测并安装 Obsidian CLI、defuddle 与 knap。"
-      },
       "version": "0.1.2",
       "author": {
         "name": "ucode"
@@ -236,15 +192,7 @@
     {
       "name": "hyper3d-rodin",
       "displayName": "Hyper3D Rodin",
-      "displayName_i18n": {
-        "en": "Hyper3D Rodin",
-        "zh-CN": "Hyper3D Rodin"
-      },
       "description": "通过文字或参考图片生成 Hyper3D Rodin Gen-2.5 三维模型，使用 BANG 拆分已完成模型，并获取生成结果。",
-      "description_i18n": {
-        "en": "Generate 3D models from text or reference images with Hyper3D Rodin Gen-2.5, split completed models with BANG, and retrieve results.",
-        "zh-CN": "通过文字或参考图片生成 Hyper3D Rodin Gen-2.5 三维模型，使用 BANG 拆分已完成模型，并获取生成结果。"
-      },
       "version": "0.1.0",
       "author": {
         "name": "Deemos",
@@ -268,10 +216,6 @@
       "name": "blender",
       "version": "0.2.2",
       "description": "让 Agent 在对话中创建、检视、修改并渲染 Blender 场景（.blend）。",
-      "description_i18n": {
-        "en": "Let the agent create, inspect, edit and render Blender scenes (.blend) via MCP tools.",
-        "zh-CN": "让 Agent 在对话中创建、检视、修改并渲染 Blender 场景（.blend）。"
-      },
       "category": "productivity",
       "author": {
         "name": "ucode"
@@ -281,21 +225,29 @@
     {
       "name": "showcase",
       "displayName": "能力演示",
-      "displayName_i18n": {
-        "en": "Capability Demo",
-        "zh-CN": "能力演示"
-      },
       "version": "1.0.0",
       "description": "ucode 插件能力演示：一个插件里同时包含 skill、命令、子角色、hook、MCP 服务与用户配置，可作为开发参考。",
-      "description_i18n": {
-        "en": "ucode plugin capability demo: skill, commands, sub-agent, hook, MCP server and user config in one plugin, as a development reference.",
-        "zh-CN": "ucode 插件能力演示：一个插件里同时包含 skill、命令、子角色、hook、MCP 服务与用户配置，可作为开发参考。"
-      },
       "category": "developer-tools",
       "author": {
         "name": "ucode"
       },
       "source": "./plugins/showcase"
+    },
+    {
+      "name": "ui-showcase",
+      "description": "演示插件的界面贡献：活动栏视图、整块自绘面板与自带样式。",
+      "version": "0.1.0",
+      "category": "development",
+      "source": "./plugins/ui-showcase",
+      "displayName": "界面示例"
+    },
+    {
+      "name": "design",
+      "description": "在画布上出稿：设计视图、设计画布与 design_* 工具，改稿走对话。",
+      "version": "0.1.0",
+      "category": "design",
+      "source": "./plugins/design",
+      "displayName": "设计"
     }
   ]
 }

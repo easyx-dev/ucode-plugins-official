@@ -1,0 +1,45 @@
+{
+  "name": "ui-showcase",
+  "displayName": "界面示例",
+  "version": "0.1.0",
+  "description": "演示插件的界面贡献：活动栏视图、整块自绘面板与自带样式，可作为带界面插件的模板。",
+  "author": {
+    "name": "ucode"
+  },
+  "license": "MIT",
+  "keywords": [
+    "示例",
+    "ui",
+    "plugin"
+  ],
+  "ui": {
+    "apiVersion": 1,
+    "styles": [
+      "./dist/ui/view.css"
+    ],
+    "views": [
+      {
+        "id": "showcase",
+        "label": "界面示例",
+        "icon": "boxes",
+        "layout": "full",
+        "order": 10,
+        "module": "./dist/ui/view.mjs",
+        "export": "ShowcaseView"
+      }
+    ],
+    "modes": [
+      {
+        "slug": "showcase-mode",
+        "icon": "palette",
+        "label": "界面示例模式",
+        "description": "演示插件贡献的主模式：工具集与提示词都由插件给。"
+      }
+    ]
+  },
+  "server": "./dist/server.mjs",
+  "tools": [
+    "showcase_mark"
+  ],
+  "agents": "./agents"
+}

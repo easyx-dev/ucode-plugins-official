@@ -1,0 +1,73 @@
+{
+  "name": "design",
+  "displayName": "设计",
+  "version": "0.1.0",
+  "description": "在画布上出稿：设计视图、设计画布与 design_* 工具，改稿走对话。",
+  "author": {
+    "name": "ucode"
+  },
+  "license": "MIT",
+  "keywords": [
+    "设计",
+    "画布",
+    "design"
+  ],
+  "server": "./dist/server.mjs",
+  "tools": [
+    "design_get_tree",
+    "design_get_node",
+    "design_find_nodes",
+    "design_get_selection",
+    "design_create_shape",
+    "design_update_node",
+    "design_set_fill",
+    "design_set_image",
+    "design_set_stroke",
+    "design_set_text",
+    "design_set_layout",
+    "design_node_resize",
+    "design_node_move",
+    "design_delete_node",
+    "design_group_nodes",
+    "design_create_page",
+    "design_open",
+    "design_export_svg"
+  ],
+  "agents": "./agents",
+  "ui": {
+    "apiVersion": 1,
+    "views": [
+      {
+        "id": "design",
+        "label": "设计",
+        "icon": "layout-template",
+        "layout": "full",
+        "order": 0,
+        "module": "./dist/ui/view.mjs",
+        "export": "DesignView"
+      }
+    ],
+    "docRenderers": [
+      {
+        "extensions": [
+          "design"
+        ],
+        "module": "./dist/ui/doc.mjs",
+        "export": "DesignDocument"
+      }
+    ],
+    "modes": [
+      {
+        "slug": "design",
+        "icon": "layout-template",
+        "label": "设计",
+        "description": "在画布上出稿，改稿走对话。"
+      }
+    ],
+    "mentions": [
+      {
+        "scheme": "design"
+      }
+    ]
+  }
+}

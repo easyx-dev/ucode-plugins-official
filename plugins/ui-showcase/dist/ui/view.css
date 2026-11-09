@@ -1,0 +1,65 @@
+/*
+ * 插件自带样式：所有颜色、圆角、字号都取宿主的 token 变量（见 DESIGN.md），
+ * 这样暗色模式、字号与密度调整都会自然跟着变——插件不需要、也不该自己定一套颜色。
+ *
+ * 类名一律加 `plugin-` 前缀：插件样式与宿主样式共处一张样式表，前缀是唯一的分隔。
+ */
+
+.plugin-showcase__inner {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 4);
+  padding: calc(var(--spacing) * 6);
+  color: var(--foreground);
+  font-size: var(--text-sm);
+}
+
+.plugin-showcase__head {
+  display: flex;
+  align-items: baseline;
+  gap: calc(var(--spacing) * 3);
+}
+
+.plugin-showcase__title {
+  margin: 0;
+  font-size: var(--text-heading-1);
+  font-weight: 600;
+  letter-spacing: var(--tracking-normal);
+}
+
+.plugin-showcase__meta {
+  color: var(--foreground-subtle);
+  font-size: var(--text-xs);
+}
+
+.plugin-showcase__grid {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: calc(var(--spacing) * 2) calc(var(--spacing) * 4);
+  margin: 0;
+  padding: calc(var(--spacing) * 3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+}
+
+.plugin-showcase__grid dt {
+  color: var(--foreground-subtle);
+}
+
+.plugin-showcase__grid dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+  font-family: var(--font-mono);
+}
+
+.plugin-showcase__actions {
+  display: flex;
+  gap: calc(var(--spacing) * 2);
+}
+
+.plugin-showcase__hint {
+  margin: 0;
+  color: var(--foreground-subtle);
+  line-height: var(--leading-prose);
+}
